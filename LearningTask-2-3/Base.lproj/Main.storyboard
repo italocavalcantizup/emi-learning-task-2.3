@@ -30,7 +30,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KaF-WX-6Ed" userLabel="View Smartphones">
                                         <rect key="frame" x="0.0" y="0.0" width="163" height="48"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Phone" translatesAutoresizingMaskIntoConstraints="NO" id="BLy-yb-87d">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Phone" translatesAutoresizingMaskIntoConstraints="NO" id="BLy-yb-87d" userLabel="ImageView Phone">
                                                 <rect key="frame" x="12" y="8" width="32" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="BLy-yb-87d" secondAttribute="height" multiplier="1:1" id="SNv-nB-h9y"/>
@@ -62,7 +62,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Etw-sJ-Xvj" userLabel="View Videogames">
                                         <rect key="frame" x="187" y="0.0" width="163" height="48"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Games" translatesAutoresizingMaskIntoConstraints="NO" id="eE2-Qp-sVp">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Games" translatesAutoresizingMaskIntoConstraints="NO" id="eE2-Qp-sVp" userLabel="ImageView Games">
                                                 <rect key="frame" x="12" y="8" width="32" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="eE2-Qp-sVp" secondAttribute="height" multiplier="1:1" id="tsM-PJ-QOz"/>
