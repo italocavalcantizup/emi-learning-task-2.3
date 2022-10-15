@@ -106,7 +106,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PYs-Vz-8TO" userLabel="View Produtos">
-                                <rect key="frame" x="32" y="268.5" width="350" height="561.5"/>
+                                <rect key="frame" x="32" y="268.5" width="350" height="682"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BKe-jG-rXe" userLabel="View Consoles">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="325"/>
@@ -117,7 +117,7 @@
                                                     <constraint firstAttribute="width" secondItem="lah-4I-N3c" secondAttribute="height" multiplier="14:13" id="ng5-rd-MhN"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Console e Joysticks" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7L-F4-NIF" userLabel="Label">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Console e Joystick" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7L-F4-NIF" userLabel="Label">
                                                 <rect key="frame" x="32" y="207" width="254" height="86"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
                                                 <color key="textColor" systemColor="systemBackgroundColor"/>
@@ -141,19 +141,57 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzW-oV-VCX" userLabel="View VR">
+                                        <rect key="frame" x="0.0" y="357" width="350" height="325"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VR" translatesAutoresizingMaskIntoConstraints="NO" id="9q6-4i-4CZ">
+                                                <rect key="frame" x="120" y="12" width="210" height="195"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="9q6-4i-4CZ" secondAttribute="height" multiplier="14:13" id="bmI-5k-fdh"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VR" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZn-be-asA" userLabel="Label">
+                                                <rect key="frame" x="32" y="207" width="254" height="86"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="Silver Sand"/>
+                                        <constraints>
+                                            <constraint firstItem="9q6-4i-4CZ" firstAttribute="height" secondItem="vzW-oV-VCX" secondAttribute="height" multiplier="0.6" id="15h-m1-Ub8"/>
+                                            <constraint firstItem="qZn-be-asA" firstAttribute="leading" secondItem="vzW-oV-VCX" secondAttribute="leading" constant="32" id="7Rh-fD-ILk"/>
+                                            <constraint firstAttribute="trailing" secondItem="qZn-be-asA" secondAttribute="trailing" constant="64" id="BCI-ui-ZlJ"/>
+                                            <constraint firstItem="9q6-4i-4CZ" firstAttribute="top" secondItem="vzW-oV-VCX" secondAttribute="top" constant="12" id="DIA-ej-ujt"/>
+                                            <constraint firstAttribute="bottom" secondItem="qZn-be-asA" secondAttribute="bottom" constant="32" id="Glx-4I-KGe"/>
+                                            <constraint firstAttribute="trailing" secondItem="9q6-4i-4CZ" secondAttribute="trailing" constant="20" id="SsY-R3-YJq"/>
+                                            <constraint firstItem="qZn-be-asA" firstAttribute="top" secondItem="9q6-4i-4CZ" secondAttribute="bottom" id="ZE2-GO-9DZ"/>
+                                            <constraint firstItem="9q6-4i-4CZ" firstAttribute="width" secondItem="vzW-oV-VCX" secondAttribute="width" multiplier="0.6" id="xHc-yv-eto"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="vzW-oV-VCX" firstAttribute="top" secondItem="BKe-jG-rXe" secondAttribute="bottom" constant="32" id="3QX-zJ-4Rn"/>
                                     <constraint firstAttribute="trailing" secondItem="BKe-jG-rXe" secondAttribute="trailing" id="5ks-5m-Jhb"/>
+                                    <constraint firstItem="vzW-oV-VCX" firstAttribute="centerX" secondItem="BKe-jG-rXe" secondAttribute="centerX" id="Heu-W8-wBG"/>
+                                    <constraint firstItem="vzW-oV-VCX" firstAttribute="trailing" secondItem="BKe-jG-rXe" secondAttribute="trailing" id="NE7-FA-sGn"/>
+                                    <constraint firstAttribute="bottom" secondItem="vzW-oV-VCX" secondAttribute="bottom" id="Ol0-9O-v6j"/>
                                     <constraint firstItem="BKe-jG-rXe" firstAttribute="top" secondItem="PYs-Vz-8TO" secondAttribute="top" id="Zqh-Qk-AjX"/>
                                     <constraint firstItem="BKe-jG-rXe" firstAttribute="leading" secondItem="PYs-Vz-8TO" secondAttribute="leading" id="ie0-jC-7lx"/>
+                                    <constraint firstItem="vzW-oV-VCX" firstAttribute="leading" secondItem="BKe-jG-rXe" secondAttribute="leading" id="xtD-48-haR"/>
+                                    <constraint firstItem="vzW-oV-VCX" firstAttribute="width" secondItem="BKe-jG-rXe" secondAttribute="width" id="zAQ-UE-pvv"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Rj-rl-p3X"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Rj-rl-p3X" firstAttribute="bottom" secondItem="PYs-Vz-8TO" secondAttribute="bottom" constant="32" id="6Cc-Lx-H9C"/>
                             <constraint firstItem="PYs-Vz-8TO" firstAttribute="leading" secondItem="4h6-Fr-Dz4" secondAttribute="leading" id="CHr-yO-mty"/>
                             <constraint firstItem="PYs-Vz-8TO" firstAttribute="trailing" secondItem="4h6-Fr-Dz4" secondAttribute="trailing" id="JKu-3c-b0Y"/>
                             <constraint firstItem="sMZ-RC-agQ" firstAttribute="leading" secondItem="6Rj-rl-p3X" secondAttribute="leading" constant="32" id="aHn-wI-faf"/>
@@ -175,8 +213,12 @@
         <image name="Games" width="32" height="32"/>
         <image name="Joystick" width="1200" height="1090"/>
         <image name="Phone" width="32" height="32"/>
+        <image name="VR" width="684" height="528"/>
         <namedColor name="Eagle">
             <color red="0.71799999475479126" green="0.7369999885559082" blue="0.64300000667572021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Silver Sand">
+            <color red="0.71399998664855957" green="0.72500002384185791" blue="0.72899997234344482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
